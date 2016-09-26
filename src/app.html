@@ -12,7 +12,7 @@ https://github.com/firebase/polymerfire/blob/master/LICENSE
 <link rel="import" href="../bower_components/polymerfire/polymerfire.html">
 <link rel="import" href="elements/na-elements.html">
 
-<dom-module id="my-app">
+<dom-module id="x-app">
   <template>
     <style include="note-app-shared-styles"></style>
 
@@ -59,7 +59,7 @@ https://github.com/firebase/polymerfire/blob/master/LICENSE
         </na-note>
       </template>
     </div>
-
+		
     <paper-fab icon="add" disabled="[[!online]]" on-tap="create"></paper-fab>
 
     <firebase-document
@@ -81,7 +81,7 @@ https://github.com/firebase/polymerfire/blob/master/LICENSE
       'use strict';
 
       Polymer({
-        is: 'my-app',
+        is: 'x-app',
 
         behaviors: [
           Polymer.NoteAppBehavior
@@ -96,12 +96,13 @@ https://github.com/firebase/polymerfire/blob/master/LICENSE
         },
 
         toEditableId: function(noteId) {
-          return this.notesPath + '/' + noteId;
+				  return this.notesPath + '/' + noteId;
         },
 
         signIn: function() {
           this.$.auth.signInWithPopup();
         }
+				
       });
     })();
   </script>

@@ -1,3 +1,6 @@
+Expense Manager - Note App (EMNA)
+v2: N(V) ... Integrates (wholesale) Vaadin Expense Manager Demo into Polymerfire Note App Demo shell
+
 # Polymer App Toolbox - Drawer Template
 
 This template is a starting point for building apps using a drawer-based
